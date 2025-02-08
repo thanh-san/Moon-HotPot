@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import { Input, Card, Button, Row, Col, Badge } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 
-// const { Search } = Input;
+const { Search } = Input;
 
 const menuData = [
-  { id: 1, name: "Lẩu Ếch Măng Chua", price: 89000, image: "/img/lauechmang.png" },
-  { id: 2, name: "Lẩu Cá Hú", price: 79000, image: "/img/laucahu.png" },
-  { id: 3, name: "Lẩu Đầu Cá Hồi", price: 79000, image: "/img/laucahoi.png" },
-  { id: 4, name: "Lẩu Tôm Càng Xanh", price: 99000, image: "/img/tomcang.png" },
-  { id: 5, name: "Lẩu Thái Hải Sản", price: 89000, image: "/img/lauthai.png" },
-  { id: 6, name: "Lẩu Nấm Chay", price: 79000, image: "/img/lauchay.png" },
-  { id: 7, name: "Lẩu Gà Lá Giang", price: 99000, image: "/img/laulagiang.png" },
-  { id: 8, name: "Lẩu Bò Nhúng Dấm", price: 109000, image: "/img/launhunggiam.png" },
-  { id: 9, name: "Lẩu Cá Lăng", price: 95000, image: "/img/laucalang.png" },
-  { id: 10, name: "Lẩu Tôm Sú", price: 119000, image: "/img/lautomsu.png" },
-  { id: 11, name: "Lẩu Sườn Non", price: 89000, image: "/img/lausuonnon.png" },
-  { id: 12, name: "Lẩu Gà Ớt Hiểm", price: 99000, image: "/img/laugaothiem.png" },
+  { id: 1, name: "Lẩu Ếch Măng Chua", price: 89000, image: process.env.PUBLIC_URL+"/img/lauechmang.png" },
+  { id: 2, name: "Lẩu Cá Hú", price: 79000, image: process.env.PUBLIC_URL + "/img/laucahu.png" },
+  { id: 3, name: "Lẩu Đầu Cá Hồi", price: 79000, image:process.env.PUBLIC_URL + "/img/laucahoi.png" },
+  { id: 4, name: "Lẩu Tôm Càng Xanh", price: 99000, image:process.env.PUBLIC_URL + "/img/tomcang.png" },
+  { id: 5, name: "Lẩu Thái Hải Sản", price: 89000, image:process.env.PUBLIC_URL + "/img/lauthai.png" },
+  { id: 6, name: "Lẩu Nấm Chay", price: 79000, image:process.env.PUBLIC_URL + "/img/lauchay.png" },
+  { id: 7, name: "Lẩu Gà Lá Giang", price: 99000, image:process.env.PUBLIC_URL + "/img/laulagiang.png" },
+  { id: 8, name: "Lẩu Bò Nhúng Dấm", price: 109000, image:process.env.PUBLIC_URL + "/img/launhunggiam.png" },
+  { id: 9, name: "Lẩu Cá Lăng", price: 95000, image:process.env.PUBLIC_URL + "/img/laucalang.png" },
+  { id: 10, name: "Lẩu Tôm Sú", price: 119000, image:process.env.PUBLIC_URL + "/img/lautomsu.png" },
+  { id: 11, name: "Lẩu Sườn Non", price: 89000, image:process.env.PUBLIC_URL + "/img/lausuonnon.png" },
+  { id: 12, name: "Lẩu Gà Ớt Hiểm", price: 99000, image:process.env.PUBLIC_URL + "/img/laugaothiem.png" },
 ];
 
 function MenuPage() {
@@ -48,11 +48,11 @@ function MenuPage() {
       </div>
 
       {/* Search */}
-      {/* <Search
+      <Search
         placeholder="Tìm món ăn"
         onSearch={(value) => setSearchTerm(value)}
         style={{ width: "100%", marginBottom: "20px" }}
-      /> */}
+      />
 
       {/* Menu Items */}
       <Row gutter={[16, 16]}>
@@ -66,7 +66,7 @@ function MenuPage() {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    height: "150px",
+                    height: "170px",
                     overflow: "hidden",
                   }}
                 >
@@ -76,7 +76,7 @@ function MenuPage() {
                     style={{
                       width: "100%",
                       height: "auto",
-                      maxHeight: "150px",
+                      maxHeight: "200px",
                       objectFit: "cover",
                     }}
                   />
