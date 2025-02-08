@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Moon-HotPot/static/css/main.e6c13ad2.css",
-    "main.js": "/Moon-HotPot/static/js/main.17737495.js",
+    "main.js": "/Moon-HotPot/static/js/main.4ff4f9ad.js",
     "static/js/488.d7053c0c.chunk.js": "/Moon-HotPot/static/js/488.d7053c0c.chunk.js",
     "index.html": "/Moon-HotPot/index.html",
     "main.e6c13ad2.css.map": "/Moon-HotPot/static/css/main.e6c13ad2.css.map",
-    "main.17737495.js.map": "/Moon-HotPot/static/js/main.17737495.js.map",
+    "main.4ff4f9ad.js.map": "/Moon-HotPot/static/js/main.4ff4f9ad.js.map",
     "488.d7053c0c.chunk.js.map": "/Moon-HotPot/static/js/488.d7053c0c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.17737495.js"
+    "static/js/main.4ff4f9ad.js"
   ]
 }
